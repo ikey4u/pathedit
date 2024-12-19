@@ -1,0 +1,18 @@
+[package]
+name = "pathedit"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.79"
+zsnip = "0.2.0"
+clap = { version = "4.4.13", features = ["derive", "wrap_help", "env"] }
+
+[dependencies.windows-registry]
+version = "0.3"
+
+[dependencies.windows]
+version = "0.58"
+features = [
+    "Win32_UI_WindowsAndMessaging",
+]
